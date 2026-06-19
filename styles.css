@@ -1,0 +1,76 @@
+body {
+    font-family: 'Cherry Bomb One', system-ui;
+    font-weight: 100;
+    background-image: url(./wallpaper.png);
+    background-size: cover;
+    margin: 0px
+}
+
+.menubar {
+    position: absolute;
+    width: calc(100vw - 2rem);
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 1rem;
+    box-shadow: 0px 1.25vh 0px rgba(0, 0, 0, 0.075);
+}
+
+.window {
+    outline: 0.5rem solid rgba(0, 0, 0, 0.404);
+    border-radius: 1rem;
+    background-color: white;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    box-shadow: 0px 1.5vh 0px rgba(0, 0, 0, 0.164);
+}
+
+.toolbar {
+    background-image: linear-gradient(to left, rgba(20, 142, 151, 0.5) 0%, rgba(78, 208, 188, 0.5) 100%);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    cursor: grab;
+    user-select: none;
+}
+
+.closebutton {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.75rem;
+    margin-left: 1.25rem;
+    left: 0%;
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(9, 48, 105);
+    border-radius: 100%;
+    box-shadow: 0px 0.25rem 0px rgba(0, 0, 0, 0.164);
+}
+
+.marginside8 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 1rem;
+    box-shadow: 0px 1.25vh 0px rgba(0, 0, 0, 0.075);
+}

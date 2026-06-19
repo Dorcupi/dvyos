@@ -1,2 +1,2 @@
-# dvyos
-This is the readme for the OS that I'm making for Stardance! This isn't my first rodeo with website development so this can't take me too long... right?
+# dvyOS!
+A fake operating system I made in native HTML, CSS, and JS, that acts as a portfolio for me and my many hobbies, sidejobs, and more.
