@@ -7,17 +7,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
     </head>
 
-    <body style="font-family: 'Cherry Bomb One', system-ui; font-weight: 100; margin: 20px;">
-        <h1 style="color: #00a7bd; margin-bottom: 0px;">dvyOS!</h1>
-        <h3 style="color: #027777; margin-top: 5px;">Running dvyOS v0.1.0-beta</h3>
-        <img src="pfp.png" width="250vw" style="object-fit: cover; border-radius: 50%;"/>
-        <p style="margin-top: 8px; margin-bottom: 8px;">Hi, my name is Divine, but I also go by Dorcupi, dvy, DorcDev, alongside many others. <b>This is my portfolio site!</b></p>
-        <p style="margin-top: 8px; margin-bottom: 8px;">I work on many things in my freetime and I have many hobbies, and this is where I will showcase them <b><i>all!!</i></b></p>
-        <p style="margin-top: 8px; margin-bottom: 8px;">One of my hobbies is making datapacks for Minecraft and making videos on them under the name <a href="https://dorcupi.github.io/dorcupi"><b>Dorcupi.</b></a></p>
-        <p style="margin-top: 8px; margin-bottom: 8px;">However, I also make my own games in <a href="https://godotengine.org/">Godot</a> under the name <a href="https://dorcupi.github.io/dorcdev"><b>DorcDev.</b></a></p>
-        <p style="margin-top: 8px; margin-bottom: 8px;">And lastly, I like <b>graphic design</b>, <b>making music</b>, and also being a big <s><b><i>theater kid.</i></b></s></p>
-        <p style="margin-top: 8px; margin-bottom: 8px;">Check out the OS to learn more about me!</p>
-    
+    <body style="font-family: 'Cherry Bomb One', system-ui; font-weight: 100; background-image: url(./wallpaper.png); background-size: cover; margin: 0px">
+        <div style="position: absolute; width: calc(100vw - 2rem); margin: 1rem; display: flex; justify-content: space-between; background-color: rgba(255, 255, 255, 0.445); border-radius: 1rem; box-shadow: 0px 1.25vh 0px rgba(0, 0, 0, 0.075);">
+            <p style="margin: 0.75rem; margin-left: 1rem;">dvyOS!</p>
+            <p id="timeDisplay" style="margin: 0.75rem; margin-right: 1rem;">[time]</p>
+            <p style="margin: 0.75rem; margin-right: 1rem;">Happiness is good!</p>
+        </div>
+        <script>
+            var timeText = document.querySelector("#timeDisplay");
+            function updateTime() {
+                timeText.innerHTML = new Date().toLocaleString();
+            };
+            updateTime();
+            setInterval(updateTime, 1000);
+        </script>
+        <div style="outline: 0.3rem solid rgba(0, 0, 0, 0.404); border-radius: 1rem; padding: 25px; width: fit-content; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; background-color: white; box-shadow: 0px 1.25vh 0px rgba(0, 0, 0, 0.075);">
+            <img src="pfp.png" width="200vw" style="object-fit: cover; border-radius: 50%;"/>
+            <h1 style="color: #00a7bd; margin-bottom: 0px;">dvyOS!</h1>
+            <h3 style="color: #027777; margin-top: 5px;">Running dvyOS! v0.1.0-beta</h3>
+            <p style="margin-top: 8px; margin-bottom: 8px;">Hi, my name is Divine, but I also go by Dorcupi, dvy, DorcDev, alongside many others. <b>This is my portfolio site!</b></p>
+            <p style="margin-top: 8px; margin-bottom: 8px;">I work on many things in my freetime and I have many hobbies, and this is where I will showcase them <b><i>all!!</i></b></p>
+            <p style="margin-top: 8px; margin-bottom: 8px;">One of my hobbies is making datapacks for Minecraft and making videos on them under the name <a href="https://dorcupi.github.io/dorcupi"><b>Dorcupi.</b></a></p>
+            <p style="margin-top: 8px; margin-bottom: 8px;">However, I also make my own games in <a href="https://godotengine.org/">Godot</a> under the name <a href="https://dorcupi.github.io/dorcdev"><b>DorcDev.</b></a></p>
+            <p style="margin-top: 8px; margin-bottom: 8px;">And lastly, I like <b>graphic design</b>, <b>making music</b>, and also being a big <s><b><i>theater kid.</i></b></s></p>
+            <p style="margin-top: 8px; margin-bottom: 8px;">Check out the OS to learn more about me!</p>
+        </div>
     </body>
-
 </html>
